@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Site para cadastro docnix</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<header>
+		<h1 id="header">Site de cadastro Docnix</h1>
+		<hr class="hr">
+	</header>
+	<main>
+		<form>
+			<div class="cadastro">
+				<h2>
+					
+					Cadastro
+				</h2>
+				<label class="form-cadastro" for="nomeesobrenome">Nome e sobrenome
+					<input class="input-cadastro" id="nomeesobrenome" type="text" required
+						placeholder="Digite seu nome e sobrenome">
+				</label>
+				<label class="form-cadastro" for="cpf">Digite seu CPF
+					<input class="input-cadastro" type="text" required placeholder="00000000000" id="cpf">
+				</label>
+				<label class="form-cadastro" for="emaildocadastro">Digite seu e-mail
+					<input class="input-cadastro" type="text" required placeholder="seuemail@email.com" id="emaildocadastro">
+				</label>
+				<label class="form-principal" for="telefone">Digite seu telefone
+					<input class="input-principal" type="text" required placeholder="00 00000-0000" id="telefone">
+				</label>
+			</div>
+			<div class="endereço">
+				
+				<h2>Endereço</h2>
+				<label class="form-endereço" for="cidade">
+					Cidade
+					<input class="input-endereço" id="cidade" type="text" required
+						placeholder="Digite o nome da sua Cidade">
+				</label>
+				<label class="form-endereço" for="rua">
+					Rua
+					<input class="input-endereço" id="rua" type="text" required placeholder="Digite o nome da sua rua">
+				</label>
+				<label class="form-endereço" for="quadra">
+					Quadra
+					<input class="input-endereço" id="quadra" type="number" required placeholder="Digite a sua quadra">
+				</label>
+				<label class="form-endereço" for="lote">
+					Lote
+					<input class="input-endereço" id="lote" type="number" required placeholder="Digite a seu Lote">
+				</label>
+			</div>
+			<div class="contato" id="contato2">
+				<h2>
+				
+
+					Contato
+				</h2>
+
+				<label class="form-principal" for="contato">Nome
+					<input class="input-principal" id="contato" type="text" required
+						placeholder="Digite o nome do contato">
+				</label>
+				<label class="form-principal" for="e-mail">E-mail
+					<input class="input-principal" id="email" type="email" required placeholder="seuemail@email.com">
+				</label>
+				<label class="form-principal" for="telefo">Digite seu telefone
+					<input class="input-principal" type="text" required placeholder="00 00000-0000" id="telefo">
+				</label>
+				<input id="salvarcontato" class="input-principal" type="button" value="Salvar Contato"
+					onclick="cadastrodecontato(contato.value,email.value,telefo.value)">
+
+			</div>
+			<div class="listadecontatos">
+				<h2>Lista de contatos</h2>
+				<table id="tabelacontatos">
+					<thead>
+						<tr>
+							<td class="tab" id="Contato">Nome</td>
+							<td class="tab" id="Email">E-mail</td>
+							<td class="tab" id="Telefone">Telefone</td>
+						</tr>
+					</thead>
+				</table>
+	
+			</div >
+			<div id="interacao">
+		
+			<input type="button" value="Cadastrar usuario" class="enviar"
+				onclick="cadastrar(nomeesobrenome.value,cpf.value,emaildocadastro.value,telefone.value,cidade.value,rua.value,quadra.value,lote.value)" id="botaodecadastrarusuario">
+			
+			</div>
+
+		</form>
+		<hr>
+		<div class="exibicao">
+			<div class="tabela">
+				<h2>Cadastros feitos</h2>
+				<table id="tabelausuario">
+					<thead>
+						<tr>
+							
+							<td class="tab" id="nome">Nome</td>
+							<td class="tab" id="Cpf">CPF</td>
+							<td class="tab" id="emaildouser">E-mail</td>
+							<td class="tab" id="telefonedouser">Telefone</td>
+							
+						</tr>
+					</thead>
+				</table>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<hr>
+		<h1>Docnix</h1>
+	</footer>
+	<script src="Jstabela.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+
+h1{
+    text-align: center;
+    color: black
+}
+
+form{
+    background-color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-left: 38%;
+}
+
+h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+}
+
+.form-cadastro{
+   
+    padding: 10px;
+    display: block;
+    text-align: left;
+}
+
+.input-cadastro{
+    display: block;
+    width: 300px;
+    font-size: 15px;
+    padding: 10px;
+    
+}
+
+.form-endereço{
+   
+    padding: 10px;
+    display: block;
+    text-align: left;
+   
+}
+#cadastrodeusuario{
+    margin-left: 10px;
+    margin-top: 10px;
+    display: block;
+    
+
+}
+.input-endereço{
+    display: block;
+    width: 300px;
+    font-size: 15px;
+    padding: 10px;
+   
+}
+
+.form-principal{
+    
+    padding: 10px;
+    display: block;
+    text-align: left;
+}
+
+.input-principal{
+    margin-top:10px;
+    display: block;
+    width: 300px;
+    font-size: 15px;
+    padding: 10px;
+  
+}
+
+#salvarcontato{
+    margin-left: 1%;
+}
+
+.listadecontatos{
+    display: inline;
+   
+}
+
+.enviar{
+    display: block;
+    width: 315px;
+    padding: 15px;
+    margin-top: 10px;
+    
+}
+
+.enviar2{
+    display: inline;
+    width: 150px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 0.5%;
+
+}
+.contato {
+    text-align: left;
+}
+
+#botaovisualizar{
+    color:white;
+    border: 1px solid black;
+    border-radius: 1px;
+    background-color: gray;
+}
+
+#botaovisualizar:hover{
+    color:red;
+    border: 1px solid black;
+}
+
+td{
+    border-right: 1px solid black;
+}
+
+.cadastros{
+    display: inline;
+    padding: 10px;
+   
+}
+p{
+    display: inline;
+    padding: 10px;
+}
+h3{
+    display: inline-block;
+    padding: 10px;
+}
+
+
+.tabela{
+    background-color: white;
+    display: inline-block;
+   
+}
+
+.tabela1{
+    background-color: white;
+    text-align: center;
+    
+}
+
+.tab{
+    margin-left: 3%;
+    border-right: 1px solid black;
+}
